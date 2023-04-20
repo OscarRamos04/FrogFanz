@@ -1,0 +1,70 @@
+/*
+    Names: Christian, Oscar, Connor
+    Date: 04/17/2023
+    Filename: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Swanky and Moo Moo', cursive;
+}
+
+/* Style rules for body and images */
+body { 
+	background-color: #72ab68;
+}
+
+header{
+	float: left;
+	width: 25%;
+	padding-bottom: 0;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/*Hide elements*/
+	.mobile-nav{
+		display: none;
+	}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+
+	/*Hide elements*/
+	.mobile-nav{
+		display: none;
+	}
+
+	/* Desktop Viewport Navbar */
+nav {
+	float: right;
+	width: 70%;
+	margin: 4em 1em 0 0;
+}
+
+nav ul {
+	text-align: right;
+}
+
+nav li {
+	border: none;
+}
+
+nav li a {
+	padding: 0.5em 1em;
+}
+
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-decoration: none;
+	border-radius: 50%;
+  }
