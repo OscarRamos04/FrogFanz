@@ -1,0 +1,94 @@
+/*
+    Names: Christian, Oscar, Connor
+    Date: 04/17/2023
+    Filename: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Swanky and Moo Moo', cursive;
+}
+
+/* Style rules for body and images */
+body { 
+	background-color: #72ab68;
+}
+
+header{
+	float: left;
+	width: 25%;
+	padding-bottom: 0;
+}
+
+/* mobile nav with hamburger menu */
+.mobile-nav {
+	overflow: hidden;
+	background-color: #333;
+	position: relative;
+  }
+
+.mobile-nav a {
+	color: #fff;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.mobile-nav a:hover{
+	background-color: #ddd;
+	color: grey;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	.mobile-nav{
+		display: none;
+	}
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px) {
+
+	/* Desktop Viewport Navbar */
+nav {
+	float: right;
+	width: 70%;
+	margin: 4em 1em 0 0;
+}
+
+nav ul {
+	text-align: right;
+}
+
+nav li {
+	border: none;
+}
+
+nav li a {
+	padding: 0.5em 1em;
+}
+
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-decoration: none;
+	border-radius: 50%;
+  }
